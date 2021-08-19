@@ -167,7 +167,7 @@
 
 /* 슬라이드 이미지, 좌우버튼, 인디게이터 */
 .main-slider{
-    background-size:cover;
+    
     width:100%; height:100%;
     position: relative;
     justify-content:center;

@@ -363,6 +363,44 @@ header .hide {
   transition: .5s;
 }
 
+.floating_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 52px;
+  border-radius: 26px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(9, 8, 8, 0.1);
+          box-shadow: 0 0 10px 0 rgba(9, 8, 8, 0.1);
+  background-color: #fff;
+  padding: 0 10px 0 10px;
+  z-index: 5;
+}
+
+.floating_btn .floating_txt {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-left: 10px;
+  color: #333;
+  text-align: left;
+}
+
+.floating_btn img {
+  text-align: right;
+}
+
+.floating_btn:hover {
+  background: #333;
+}
+
+.floating_btn .floating_txt:hover {
+  color: #fff;
+}
+
 .main-img {
   background-size: cover;
 }
@@ -429,7 +467,7 @@ header .hide {
 
 .contents .con2 {
   position: absolute;
-  top: 185%;
+  top: 180%;
 }
 
 .contents .con2 img {
@@ -572,7 +610,7 @@ header .hide {
   position: absolute;
   width: 17.3%;
   left: 15%;
-  top: 497%;
+  top: 495%;
   padding: 10px;
   border: 1px solid #c3c3c3;
   background: transparent;
@@ -596,7 +634,7 @@ header .hide {
 }
 
 .contents2 .con2-img figure figcaption {
-  padding-top: 20px;
+  padding-top: 5px;
   font-size: 15px;
 }
 

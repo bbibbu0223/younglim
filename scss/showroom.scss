@@ -246,6 +246,7 @@ header .hide{
                 border-top: 1px solid#000;
                 border-bottom:1px solid#000;
                 width:70%;
+                
             }
         }
     }
@@ -289,6 +290,37 @@ header .hide{
     transition:.5s;
 }
 
+.floating_btn{
+    display:flex;
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:200px;
+    height:52px;
+    border-radius:26px;
+    box-shadow:0 0 10px 0 rgba(9,8,8,.1);
+    background-color:#fff;
+    padding:0 10px 0 10px;
+    z-index:5;
+    .floating_txt{
+        font-size:16px;
+        font-weight:bold;
+        padding-top: 15px;
+        padding-left:10px;
+        color:#333;
+        text-align:left;
+    }
+    img{
+        text-align: right;
+    }
+    
+}
+.floating_btn:hover{
+    background: #333;
+}
+.floating_btn .floating_txt:hover{
+    color:#fff;
+}
 
 .main-img{
     background-size: cover;
@@ -344,7 +376,7 @@ header .hide{
     }
     .con2{
         position:absolute;
-        top:185%;
+        top:180%;
         img{
             width:20%; height:20%;
             padding:0 0 0 1130px;
@@ -476,7 +508,7 @@ header .hide{
         text-align: center;
         display: block;
         position: absolute;
-        width:17.3%; left:15%; top:497%;
+        width:17.3%; left:15%; top:495%;
         padding:10px;
         border:1px solid #c3c3c3;
         background:transparent;
@@ -493,7 +525,7 @@ header .hide{
             
             img{width:80%; height:80%;}
             figcaption{
-                padding-top:20px;
+                padding-top:5px;
                 font-size:15px;
             }
         }

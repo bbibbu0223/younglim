@@ -142,7 +142,11 @@ $(function(){
     window.addEventListener('scroll', handleScroll);
     // window.addEventListener('scroll', handleScroll2);
 
+    //상담버튼
 
-    
+    $(document).ready(function(){ 
+        var currentPosition = parseInt($(".floating_btn").css("top")); $(window).scroll(function() { 
+        var position = $(window).scrollTop(); $(".floating_btn").stop().animate({"top":position+currentPosition+"px"},1000); }); 
+    });
 
 });

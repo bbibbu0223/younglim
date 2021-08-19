@@ -3,6 +3,7 @@
 }
 body{margin: 0;}
 ul{margin:0;}
+
 .header{
     position:fixed;
     top:0;
@@ -23,6 +24,7 @@ header .hide{
     display:flex;
     justify-content: space-between;
     padding-left:10.94%;
+    
     h1{
         padding-top: 10px;
         img{width:70%;}
@@ -240,12 +242,19 @@ header .hide{
                 width:60%; height:60%;
             }
             a{
-                display:block;
+                display:flex;
                 font-size:15px;
                 line-height:30px;
                 border-top: 1px solid#000;
                 border-bottom:1px solid#000;
+                
                 width:70%;
+                img{
+                    padding-top:0;
+                    padding-left:55%;
+                    
+                    width:35px; height:35px;
+                }
             }
         }
     }
@@ -262,7 +271,7 @@ header .hide{
 .header.active{
     background:#fff;
     
-    width:100%; height:450px;
+    width:100%; height:500px;
     transition:.5s;
 }
 
@@ -325,6 +334,39 @@ div{
 
 
 }
+
+.floating_btn{
+    display:flex;
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:200px;
+    height:52px;
+    border-radius:26px;
+    box-shadow:0 0 10px 0 rgba(9,8,8,.1);
+    background-color:#fff;
+    padding:0 10px 0 10px;
+    z-index:5;
+    .floating_txt{
+        font-size:16px;
+        font-weight:bold;
+        padding-top: 15px;
+        padding-left:10px;
+        color:#333;
+        text-align:left;
+    }
+    img{
+        text-align: right;
+    }
+    
+}
+.floating_btn:hover{
+    background: #333;
+}
+.floating_btn .floating_txt:hover{
+    color:#fff;
+}
+
 
 .main-slider{
     background-size: cover;
@@ -489,14 +531,14 @@ p{
         padding:20px 0 0 0;
         
         img{width:80px; height:80px;}
-
         figcaption{text-align: center;}
-        
     }
-    
 }
-.product :hover{
-    figure{filter: grayscale(50%) opacity(0.6);}
+
+.product:hover{
+    figure{
+        filter: grayscale(50%) opacity(0.6);
+    }
     figure:nth-of-type(2){
         filter: grayscale(50%) opacity(0.6);
     }
@@ -541,6 +583,7 @@ p{
                 }
             }
     }
+    
     .pickImg{
         width: 100%;
         height: 700px;
@@ -561,6 +604,7 @@ p{
                 margin-left: .8%;
                 img{width: 100%;}
             }
+            
     }
 }
 
