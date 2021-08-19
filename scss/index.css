@@ -420,8 +420,8 @@ div button:hover {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 20px;
+  bottom: 20px;
   width: 200px;
   height: 52px;
   border-radius: 26px;
