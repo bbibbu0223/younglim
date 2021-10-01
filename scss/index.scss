@@ -27,6 +27,7 @@ ul{margin:0;}
 }
 
 .header{
+    text-decoration: none;
     position:fixed;
     top:0;
     width:100%;
@@ -46,7 +47,7 @@ header .hide{
     display:flex;
     justify-content: space-between;
     padding-left:10.94%;
-    
+    text-decoration: none;
     h1{
         padding-top: 10px;
         img{width:70%;}
@@ -60,7 +61,7 @@ header .hide{
     & > ul:nth-of-type(1){ 
         display: flex;
         justify-content:flex-start;
-        
+        text-decoration: none;
         width:80%;
         padding:20px 0;
         
@@ -71,6 +72,10 @@ header .hide{
             font-weight: bold;
             padding:15px 10px 0 10px;
             
+            a{
+                text-decoration: none;
+                color:#fff;
+            }
             img{
                 display:block;
                 
@@ -80,6 +85,7 @@ header .hide{
         }
     }
     .header_like{
+            text-decoration: none;
             display: flex;
             justify-content:flex-start;
             
@@ -89,6 +95,7 @@ header .hide{
             padding-top:30px;
             
             li{
+                text-decoration: none;
                 list-style:none;
                 margin:0; padding:0;
                 img{width:60%;}
@@ -290,6 +297,9 @@ header .hide{
     z-index:99999;
 }
 
+.header_in:hover .menu > li > a{
+    color:#000;
+}
 .header.active{
     background:#fff;
     
@@ -304,7 +314,6 @@ header .hide{
 .header:hover .header_like_on{
     display:flex;
 }
-
 .header:hover .header_in{
     background:#fff;
     height:100px;
